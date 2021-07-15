@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="Style.css">
+  <link href='https://fonts.googleapis.com/css?family=Carrois Gothic' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet'>
+  <link id="favicon" rel="shortcut icon" href="img/images.jfif">
+  <style>
+    body {
+      height: 800px;
+      /* Used to enable scrolling */
+      background: linear-gradient(25deg, #7a7878 35%, #812912 65%);
+      transform: skew(0deg, 0deg);
+
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+
+
+    .column {
+      float: left;
+      width: 15%;
+      padding: 10px;
+    }
+
+    /* Style the images inside the grid */
+    .column img {
+      opacity: 0.8;
+      cursor: pointer;
+      float: center;
+    }
+
+    .column img:hover {
+      opacity: 1;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* The expanding image container */
+    .container {
+      position: relative;
+      display: none;
+      float: center;
+    }
+
+    /* Expanding image text */
+    #imgtext {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      color: white;
+      font-size: 20px;
+    }
+
+    /* Closable button inside the expanded image */
+    .closebtn {
+      position: fixed;
+      top: 10px;
+      right: 15px;
+      color: rgb(255, 0, 0);
+      font-size: 35px;
+      cursor: pointer;
+    }
+  </style>
+
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Carrois Gothic';
+      font-size: 22px;
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    h5 {
+      color: white;
+      font-weight: lighter;
+      font: size 20px;
+    }
+
+    .h22 {
+
+      font-family: 'Calligraffitti';
+
+    }
+
+    .p1 {
+      color: rgba(54, 54, 54, 0.897);
+      font-size: 20px;
+      box-shadow: 0 10px 30px rgb(177, 171, 171);
+      box-shadow: 034 45 3px;
+    }
+
+    section {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 300px;
+      width: 850px;
+
+      background-color: rgb(177, 171, 171);
+
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      display: inline-flex;
+
+    }
+
+    .content7 {
+
+      height: 100%;
+      background-color: rgb(177, 171, 171);
+      padding: 1% 3%;
+      line-height: 1.5em;
+      font-size: 18px;
+      text-align: justify;
+      backface-visibility: hidden;
+    }
+    h2{
+        color: #504e4e;
+    }
+
+    .img1 {
+      border-radius: 300px;
+      padding: 0 1em;
+    }
+  </style>
+</head>
+
+<body>
+ 
+  <div class="clearfix">
+    <div class="navbar">
+        <a href="index.html">Home</a>
+      <a href="volunteer.html">Volunteer</a>
+
+      <a href="aboutus.html">About Us</a>
+
+      <div class="dropdown">
+        <button class="dropbtn">News
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+
+        </div>
+      </div>
+      <div class="login-container">
+        <a href="register.php">Sign Up</a>
+        <a href="login.php">Log In</a>
+      </div>
+    </div><br><br><br>
+       <center><div>
+            <h2>Blood Jurney</h2>
+            <video type="mp4" controls src="img/Y2Mate.is - Blood Donation-7HXJyMjUBqI-480p-1626021526963.mp4" width="900px" height="500px"></video>
+        </div></center>
+        <br><br><br>
+    <center>
+      <hr class="hr" width="90%">
+    </center>
+    <div class="footer">
+      <div class="row5"><br>
+        <center>
+          <a href="https://www.twitter.com/twitter/"><img src="img/icons8-twitter-24 (1).png" width="19px" height="19px"
+              class="icon" align="center" hspace="13px" vspace="4px"></a>
+
+          <a href="https://www.facebook.com/facebook/"><img src="img/icons8-facebook-24 (1).png" width="19px"
+              height="19px" class="icon" align="center" hspace="13px" vspace="4px"></a>
+
+
+          <a href="https://www.facebook.com/Donate/"><img src="img/icons8-money-box-24.png" width="19px" height="19px"
+              class="icon" align="center" hspace="13px" vspace="4px"></a>
+        </center>
+      </div>
+    </div>
+  </div><br><br>
+
+
+
+
+
+
+
+</body>
+
+</html>

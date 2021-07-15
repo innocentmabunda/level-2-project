@@ -1,0 +1,722 @@
+
+*{
+ margin: 0;
+ padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(252, 252, 252);
+
+    margin: 0;
+    padding: 0;
+}
+.skewed-bg{
+ position: relative;
+  background-color:rgb(219, 215, 215);
+  padding:200px 0;
+ 
+ transform: skew(0deg, -10deg);
+ margin-top: -60px;
+ enable-background: accumulate;
+}
+
+.grid {
+  background-color: transparent;
+  display: grid;
+  padding: 0 340px;
+ 
+  white-space: nowrap;
+  grid-template-columns: 1fr  1fr;
+  width: 100%;
+  -ms-grid-column-align: center;
+ 
+  
+}
+h1{
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(170, 70, 70), 0 0 5px rgb(165, 1, 1);
+}
+
+
+
+.grid div:nth-child(even) {
+  background-color: transparent;
+
+  
+}
+
+.grid div:nth-child(odd) {
+  background-color: transparent;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+  padding: 0 22rem;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 8px;
+ 
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+ color: red;
+ 
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: rgb(245, 127, 127);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#more {
+  display: none;
+}
+p {
+  text-align: justify;
+  text-emphasis: none;
+  text-justify: auto;
+  font-weight: lighter;
+  font-size: 15px;f
+}
+
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+  border-radius: 10px;
+  width: 20%;
+  margin: 0 40%;
+  background-color: #d60505;
+  color: white;
+  padding: 10px;
+  background-image: url(img/images.jfif);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+  
+}
+
+.button44 {
+  color: rgb(5, 253, 79);
+}
+.submit3 {
+  color: blue;
+}
+
+/* Full-width inputs */
+
+input[type="password"] {
+  width: 150px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+span {
+  color: rgba(156, 155, 155, 0.897);
+}
+.span1 {
+  color: greenyellow;
+}
+.search3 {
+  margin-right: 40px;
+}
+.summit1 {
+  background-color: #00003e;
+  color: white;
+
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: 20px;
+}
+.button3 {
+  background-color: #00003e;
+  color: white;
+
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 70px;
+  height: 20px;
+}
+/* Set a style for all buttons */
+button {
+  background-color: #00003e;
+  color: white;
+
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding-left: 0 50px;
+  background-color: #080808;
+  color: white;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+
+/* The "Forgot password" text */
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: none;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100px;
+  }
+}
+
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.row6 {
+  float: right;
+  padding: 0 20px;
+}
+
+/* Set a style for all buttons */
+
+button:hover {
+  opacity: 2;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .signupbtn {
+  }
+}
+.row {
+  background-color: #2e2c2c;
+  width: 100%;
+  height: 100%;
+}
+.column {
+  float: left;
+
+  padding: 0 20px;
+
+  color: white;
+}
+
+
+span3 {
+  color: rgb(5, 253, 79);
+}
+.column2 {
+  float: right;
+  padding: 40px;
+}
+.column4 {
+  display:inline
+  
+}
+.column5 {
+  display: inline;
+  
+}
+.loginbtn1 {
+  margin: 20px;
+  float: right;
+}
+.piggy {
+  display: inline-block;
+  float: right;
+  margin-left: 240px;
+  padding-top: 20px;
+}
+.h4 {
+  color: white;
+}
+.money {
+  float: right;
+  margin-left: 200px;
+  padding: 20px;
+}
+.button1 {
+  float: right;
+}
+/* Clear floats */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  background-color: black;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 30%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 10%;
+  }
+}
+
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  
+  color: white;
+  cursor: pointer;
+  padding: 0 50px;
+  width: 90%;
+  
+  border: radius 60px;px;
+  text-align: left;
+  
+  font-size: 15px;
+ 
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+  
+ 
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 50px;
+  display: none;
+  overflow: hidden;
+  
+  width: 90%;
+  color: rgb(255, 255, 255);
+}
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 10px;
+}
+
+
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+body, html {
+  height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.5)), url("img/pexels-puwadon-sangngern-5340276.jpg");
+
+/* Set a specific height */
+height: 40%;
+
+/* Position and center the image to scale nicely on all screens */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+text-align: left;
+position: absolute;
+top: 50%;
+left: 32%;
+transform: translate(-50%, -50%);
+color: white;
+}
+
+
+.login-container a{
+display:flex;
+float: right;
+
+}
+
+input[type=text] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 100%;
+}
+.h22{
+  color:lightgrey;
+  font-size: xx-large;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  width: 14%;
+  padding: 0 4px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row10:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container1 {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+.footer{
+  display:flex;
+}
+
+.row5 {
+  padding-left: 45rem;
+}
+h6{
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+/* Month header */
+.month {
+  padding: 10px 10px;
+  width: 40%;
+  height: 20%;
+  background: #1abc9c;
+  text-align: center;
+  margin:0 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+  width: 60%;
+  margin:0 1rem;
+}
+
+.weekdays li {
+  display: inline-flex;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+  width: 60%;
+  margin:0 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 15.6%;
+  height: 30px;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: rgb(116, 116, 116);
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important;
+  
+}
+.days li:hover{
+  color: red;
+  cursor: pointer;
+ 
+}
+
+
+/* Add responsiveness - make the columns appear on top of each other instead of next to each other on small screens */
+@media screen and (max-width: 1000px) {
+  .column22,
+  .column22 {
+    width: 20%;
+    text-align: center;
+   
+  }
+}
+
+/* Three columns side by side */
+.column22 {
+  float: left;
+  width: 33.3%;
+
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column22 {
+    width: 70%;
+    display: block;
+  
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container22 {
+  padding: 0 10px;
+  
+}
+
+/* Clear floats */
+.container22::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 0 40px;
+  color: white;
+  background-color: rgb(155, 5, 5);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}

@@ -1,0 +1,175 @@
+<?php include('server.php') ?>
+<!DOCTYPE html>
+<html>
+<title>Social Donors</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style2.css">
+<style>
+    body,
+    html {
+        height: 100%;
+        font-family: "Inconsolata", sans-serif;
+    }
+
+
+
+    .menu {
+        display: none;
+    }
+
+    p {
+        text-align: center;
+        text-align: justify;
+        padding-left: 0 2px;
+    }
+</style>
+
+<body>
+
+    <!-- Links (sit on top) -->
+    <div class="navbar">
+        <div class="navbar-links">
+
+
+
+            <ul>
+                <a img src="img/images.jfif" width="30px" height="30px" alt="logo">
+                    <h2><b>SocialDonors</b></h2>
+                </a>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#where">Hosting a Blood drive</a></li>
+                <li><a href="#about">Biomedical Services</a></li>
+                <li><a href="#menu"> Donate Blood</a></li>
+
+                </li>
+                <li class="loginbtn1">
+                    <a href="login.html"><b>signin</b></a>
+                </li>
+
+                <li class="piggy">
+                    <input type="text" placeholder="Search..">
+
+
+                </li>
+
+
+
+
+
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="header">
+        <h2>Register</h2>
+    </div>
+
+    <form method="post" action="register.php">
+        <?php include('errors.php'); ?>
+        <div class="input-group">
+            <label>Username</label>
+            <input type="text" name="username" value="">
+        </div>
+        <div class="input-group">
+            <label>Email</label>
+            <input type="email" name="email" value="">
+        </div>
+        <div class="input-group">
+            <label>Password</label>
+            <input type="password" name="password_1">
+        </div>
+        <div class="input-group">
+            <label>Confirm password</label>
+            <input type="password" name="password_2">
+        </div>
+        <div class="input-group">
+            <button type="submit" class="btn" name="reg_user">Register</button>
+        </div>
+        <p>
+            Already a member? <a href="login.php">Sign in</a>
+        </p>
+    </form>
+    <br><br><br>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="row">
+            <div class="column">
+                <h4>Quick Links</h4>
+                <p>Home</p>
+                <p>About Us</p>
+                <p>Contacts</p>
+                <p>Gallery Features</p><br>
+                <h4><b>SocialDonors</b></h4>
+            </div>
+
+            <div class="column">
+                <h4>More Products</h4>
+                <p>Forum PHP Script</p>
+                <p>Edu Smart</p>
+                <p>Smart Event</p>
+                <p>Smart School</p><br>
+                <p>©socialdonors2011-2021</p>
+
+            </div>
+
+            <div class="row1">
+                <div class="column">
+                    <h4>Organization</h4>
+                    <p>AABB History</p>
+                    <p>Governance&Policies</p>
+                    <p>Disaster Response</p><br><br><br>
+
+                </div>
+
+            </div>
+
+
+            <div class="column2">
+                <h6>
+
+                    Terms & Conditions Privacy
+                </h6>
+
+                <div class="facebook"><br><br><br>
+
+
+                    <a href="https://www.instagram.com/MokisBakery/"><img src="img/download (1).jfif" width="25px"
+                            height="25px" class="icon" align="right" hspace="13px" vspace="4px"></a>
+
+                    <a href="https://www.facebook.com/MokisBakery/"><img src="img/icons8-facebook-24 (1).png"
+                            width="25px" height="25px" class="icon" align="right" hspace="13px" vspace="4px"></a>
+
+                    </a>
+                </div>
+            </div><br>
+
+        </div>
+    </div>
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+        }
+        document.getElementById("myLink").click();
+    </script>
+
+</body>
+
+</html>
